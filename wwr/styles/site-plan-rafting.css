@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+body{
+    font-family: Poppins;
+    max-width: 960px;
+    padding: 20px;
+}
+
+:root{
+    --primary-colour: #3B73CE;
+    --secondary-colour: #fff;
+    --accent1-color: #ff7700;
+    --accent2-color: #e3ff00;
+
+    --heading-font: Noto Sans;
+    --paragraph-font: Poppins;
+
+    --nav-background-colour: #3b73ce;
+    --nav-link-colour: #fff;
+    --nav-hover-link-colour: #ff7700;
+    --nav-hover-background-colour: #e3ff00;
+}
+
+body{
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    color: var(--primary-colour);
+}
+
+header{
+    padding: 20px;
+    background-color: var(--accent2-color);
+}
+
+p{
+    padding: 20px;
+}
+
+nav{
+    background-color: var(--primary-colour);
+    display: flex;
+    font-size: 1.5rem;
+}
+nav a{
+    color: var(--nav-link-colour);
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited{
+    color: var(--nav-link-colour);
+}
+
+nav a:hover{
+    color: var(--nav-hover-link-colour);
+    background-color: var(--nav-hover-background-colour);
+}
